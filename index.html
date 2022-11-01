@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="fromsheet" name="forms">
+            <h1>Calculator</h1>
+            <input class='clo-1' type="text" name="input" id="textinput" placeholder="0"> <br>
+            <input class='clo-1' type="button" value="1" onclick="forms.input.value +='1' ">
+            <input class='clo-1'  type="button" value="2" onclick="forms.input.value +='2' ">
+            <input class='clo-1' type="button" value="3" onclick="forms.input.value +='3' "> 
+            <br>
+            <input class='clo-2' type="button" value="4" onclick="forms.input.value +='4' ">
+            <input class='clo-2' type="button" value="5" onclick="forms.input.value +='5' ">
+            <input class='clo-2' type="button" value="6" onclick="forms.input.value +='6' ">
+            <br>
+            <input class='clo-3' type="button" value="7" onclick="forms.input.value +='7' ">
+            <input class='clo-3' type="button" value="8" onclick="forms.input.value +='8' ">
+            <input class='clo-3'type="button" value="9" onclick="forms.input.value +='9' ">
+            <br>
+            <input class='clo-4'type="button" value="." onclick="forms.input.value +='.' ">
+            <input class='clo-4'type="button" value="0" onclick="forms.input.value +='0' ">
+            <input class='clo-4' type="button" value="=" onclick="forms.input.value = eval(forms.input.value) ">
+            
+
+            <br>
+            <input type="button" value="+" onclick="forms.input.value +='+' ">
+            <input type="button" value="-" onclick="forms.input.value +='-' ">
+            <input type="button" value="*" onclick="forms.input.value +='*' ">
+            <input id="divide" type="button" value="/" onclick="forms.input.value +='/' ">
+            <input id="clear" type="button" value="Clear" onclick="forms.input.value = '' ">
+            
+        </form>
+    </div>
+</body>
+</html>
